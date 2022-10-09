@@ -10,7 +10,9 @@ The purpose of the analysis is to help the manager of Pewlett Hackard prepare fo
 2) Determine the Employees Eligible for the Mentorship Program
 
 ## Results
--
+- Query to create Retirement Titles table for employees who were born between January 1, 1952 and December 31, 1955. ![Query_The_Number_of_Retiring_Employees_by_Title](https://user-images.githubusercontent.com/111193280/194782221-867fe336-4abe-4489-807f-627b6b1d01d5.png)
+
+- 
 -
 -
 -
