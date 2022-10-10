@@ -16,7 +16,7 @@ The purpose of the analysis is to help the manager of Pewlett Hackard prepare fo
 
 - The retiring_titles.csv file was created to retrieve the total counts of current employees at retirement age by position title. The query yieled a total of seven employee titles at retirement age. The largest sums of employees with retirement eligibility were shown to be at senior level positions, which comprised approximately two thirds of the retirement eligible employees. 
 
-![Retiring_Titles](retiring_titles.png)
+![Retiring_Titles](data/retiring_titles.png)
 
 -The mentorship_eligibility.csv was created to provide a list of employees that are eligible to participate in a mentorship program. The eligible employees were selected by the birth year 1965, which totaled 1,549 current employees with eligibility.
 
