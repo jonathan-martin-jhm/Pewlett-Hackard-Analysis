@@ -10,29 +10,18 @@ The purpose of the analysis is to help the manager of Pewlett Hackard prepare fo
 2) Determine the Employees Eligible for the Mentorship Program
 
 ## Results
-- Query to create Retirement Titles table for employees who were born between January 1, 1952 and December 31, 1955.
+- In the retirement_titles.csv, a total of 133,776 employees were intially identified to be at retirement age from a list of 300,024 employees. Retirement age was defined as employees born between 1952 and 1955. The data set contains duplicates of employees that need to be removed, which are a result of employees changing titles during their tenure with the company. The total also contains former and current employees. The former employees need to be removed as well.
 
-![Query_The_Number_of_Retiring_Employees_by_Title](https://user-images.githubusercontent.com/111193280/194782221-867fe336-4abe-4489-807f-627b6b1d01d5.png)
+- In the unique_titles.csv, former employees and duplicates of employees were removed from the data set to yield a total of 72,458 employees at retirement age.
 
-Data/retirement_info.csv
+- The retiring_titles.csv file was created to retrieve the total counts of current employees at retirement age by position title. The query yieled a total of seven employee titles at retirement age. The largest sums of employees with retirement eligibility were shown to be at senior level positions, which comprised approximately two thirds of the retirement eligible employees. 
 
-- 
--
--
--
+(retiring_tiles.png)
 
-###Deliverable 1
--A query is written and executed to create a Retirement Titles table for employees who are born between January 1, 1952 and December 31, 1955. (10 pt) https://github.com/jonathan-martin-jhm/Pewlett-Hackard-Analysis/blob/main/Queries/Employee_Database_challenge.sql
--The Retirement Titles table is exported as retirement_titles.csv. (5 pt) https://github.com/jonathan-martin-jhm/Pewlett-Hackard-Analysis/blob/main/Data/retirement_titles.csv
--A query is written and executed to create a Unique Titles table that contains the employee number, first and last name, and most recent title. (15 pt) https://github.com/jonathan-martin-jhm/Pewlett-Hackard-Analysis/blob/main/Queries/Employee_Database_challenge.sql
--The Unique Titles table is exported as unique_titles.csv. (5 pt) https://github.com/jonathan-martin-jhm/Pewlett-Hackard-Analysis/blob/main/Data/unique_titles.csv
--A query is written and executed to create a Retiring Titles table that contains the number of titles filled by employees who are retiring. (10 pt) https://github.com/jonathan-martin-jhm/Pewlett-Hackard-Analysis/blob/main/Queries/Employee_Database_challenge.sql
--The Retiring Titles table is exported as retiring_titles.csv. (5 pt) https://github.com/jonathan-martin-jhm/Pewlett-Hackard-Analysis/blob/main/Data/retirement_titles.csv
+-The mentorship_eligibility.csv was created to provide a list of employees that are eligible to participate in a mentorship program. The eligible employees were selected by the birth year 1965, which totaled 1,549 current employees with eligibility.
 
-###Deliverable 2
--A query is written and executed to create a Mentorship Eligibility table for current employees who were born between January 1, 1965 and December 31, 1965. (25 pt) https://github.com/jonathan-martin-jhm/Pewlett-Hackard-Analysis/blob/main/Queries/Employee_Database_challenge.sql
--The Mentorship Eligibility table is exported and saved as mentorship_eligibilty.csv. (5 pt) https://github.com/jonathan-martin-jhm/Pewlett-Hackard-Analysis/blob/main/Data/mentoship_eligibility.csv
 ## Summary
-### How many roles will need to be filled as the "silver tsunami" begins to make an impact?
 
-### Are there enough qualified, retirement-ready employees in the departments to mentor the next generation of Pewlett Hackard employees?
+A total of 72,458 employees will need to be replaced when the "silver tsunami" begins to make an impact. The total employees eligible for the mentorship program totaled 1,549, which only covers 2.1% of the employees retiring. As such, I recommend expanding the mentorship program to provide more comprehensive plan to replace the senior positions vacated by retiring employees. A new query could me made to idenitify more employees to target for the mentorship program. A initial query that expands the birth year parameter from 1965 to 1965-1970 would broaden the list of eligible employees for the mentorship program. Additionally, the mentors would likely need to provide mentorship to multiple employees to cover the larger number of employees retiring.
+
+
